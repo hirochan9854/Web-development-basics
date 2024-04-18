@@ -12,11 +12,15 @@ if ($blog>=time()-86400)
     echo "no";
 }
 
+$age = 18;
 
-if($age>=20){
-    echo "お買い上げありがとうございます";
+if($age < 20){
+    echo "購入できません";
+}
+else if($age <= 25){
+    echo "年齢確認が必要です";
 }
 else{
-    echo "ご購入できません";
+    echo "購入できます";
 }
 ?>
